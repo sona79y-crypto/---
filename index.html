@@ -1,3 +1,14 @@
-<!doctype html><meta charset="utf-8"><title>휘블록스</title><body style="background:#11131a;color:#ccc;font-family:sans-serif;text-align:center;padding-top:40vh">휘블록스 불러오는 중…<script>
-(async()=>{const ok=await Promise.all(Array.from({length:120},(_,i)=>i+1).map(n=>fetch(encodeURIComponent('index ('+n+').html'),{method:'HEAD',cache:'no-store'}).then(r=>r.ok?n:0).catch(()=>0)));const n=Math.max(...ok);if(n)location.replace(encodeURIComponent('index ('+n+').html'));else document.body.textContent='게임 파일을 찾지 못했어요. index (숫자).html 파일을 Upload files로 올려 주세요.'})()
-</script>
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>휘블록스</title>
+<style>body{margin:0;background:#10131c;color:#f2f4f8;font-family:sans-serif;display:grid;place-items:center;height:100vh}</style>
+</head><body><p id="m">휘블록스 불러오는 중…</p>
+<script>
+(async()=>{
+  const ok=await Promise.all(Array.from({length:200},(_,i)=>i+1).map(n=>
+    fetch(encodeURIComponent('index ('+n+').html'),{method:'HEAD',cache:'no-store'}).then(r=>r.ok?n:0).catch(()=>0)));
+  const n=Math.max(...ok);
+  if(n)location.replace(encodeURIComponent('index ('+n+').html'));
+  else document.getElementById('m').textContent='게임 파일을 찾지 못했어요. 「index (숫자).html」 파일을 올려 주세요.';
+})();
+</script></body></html>
