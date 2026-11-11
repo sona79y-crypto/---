@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<!-- ▼ 구글 확인 태그(google-site-verification)를 썼다면 그 한 줄을 이 줄 대신 여기에 다시 붙여넣으세요 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>휘블록스 - 무료 웹게임 모음 | 네온 카타나 · 큐브 던전 · 올스타 배틀</title>
+<meta name="description" content="휘블록스(Hwiblox)는 설치 없이 바로 하는 무료 웹게임 모음이에요. 카타나 제로 스타일 액션 네온 카타나, 데드 셀 스타일 로그라이크 큐브 던전, 휘블록스 올스타 배틀, 그림자 암살자 등 여러 게임을 PC와 모바일에서 즐겨 보세요.">
+<meta name="keywords" content="휘블록스,Hwiblox,무료 게임,웹게임,브라우저 게임,네온 카타나,큐브 던전,휘블록스 올스타 배틀,그림자 암살자">
+<meta property="og:title" content="휘블록스 - 무료 웹게임 모음">
+<meta property="og:description" content="설치 없이 바로 하는 무료 웹게임 모음. 네온 카타나 · 큐브 던전 · 올스타 배틀 등">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sona79y-crypto.github.io/---/">
+<link rel="canonical" href="https://sona79y-crypto.github.io/---/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"휘블록스","alternateName":["Hwiblox","휘블록스 게임"],"url":"https://sona79y-crypto.github.io/---/"}</script>
+<style>
+html,body{margin:0;height:100%;background:#0b0716;color:#fff;font-family:system-ui,'Apple SD Gothic Neo','Malgun Gothic',sans-serif}
+#intro{min-height:100%;display:grid;place-items:center;text-align:center;padding:24px;box-sizing:border-box}
+#intro h1{margin:0 0 8px;font-size:clamp(34px,8vw,64px)}
+#intro p{margin:4px 0;opacity:.85;line-height:1.6}
+#game{position:fixed;inset:0;width:100%;height:100%;border:0;display:none;background:#000}
+</style>
+</head>
+<body>
+<main id="intro">
+  <div>
+    <h1>휘블록스</h1>
+    <p>설치 없이 바로 하는 무료 웹게임 모음</p>
+    <p>⚔️ 네온 카타나 · 🧊 큐브 던전 · 🥊 휘블록스 올스타 배틀 · 🗡 그림자 암살자 외 여러 게임</p>
+    <p id="st">게임을 불러오는 중…</p>
+    <noscript><p>휘블록스를 하려면 자바스크립트를 켜 주세요.</p></noscript>
+  </div>
+</main>
+<iframe id="game" title="휘블록스" allow="fullscreen; autoplay; clipboard-write" allowfullscreen></iframe>
+<script>
+(async()=>{const ok=async n=>{try{const r=await fetch('index%20('+n+').html',{method:'HEAD',cache:'no-store'});return r.ok}catch(e){return false}};
+let best=0;const R=await Promise.all(Array.from({length:200},(_,i)=>ok(i+1)));R.forEach((v,i)=>{if(v)best=i+1});
+const f=document.getElementById('game');f.src='index%20('+(best||1)+').html';f.onload=()=>{f.style.display='block';document.getElementById('intro').style.display='none';try{f.focus()}catch(e){}};})();
+</script>
+</body>
+</html>
