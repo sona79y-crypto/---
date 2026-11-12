@@ -1,7 +1,0 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>휘블록스</title></head>
-<body style="margin:0;background:#0b0716;color:#fff;font-family:sans-serif;display:grid;place-items:center;height:100vh">불러오는 중…
-<script>
-(async()=>{const ok=async n=>{try{const r=await fetch('index%20('+n+').html',{method:'HEAD',cache:'no-store'});return r.ok}catch(e){return false}};
-let best=0;const R=await Promise.all(Array.from({length:200},(_,i)=>ok(i+1)));R.forEach((v,i)=>{if(v)best=i+1});
-location.replace(best?'index%20('+best+').html':'index%20(1).html')})();
-</script></body></html>
